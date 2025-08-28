@@ -236,10 +236,10 @@ export class AutoGenerator {
   private addField(table: string, field: string): string {
 
     // ignore Sequelize standard fields
-    const additional = this.options.additional;
-    if (additional && (additional.timestamps !== false) && (this.isTimestampField(field) || this.isParanoidField(field))) {
-      return '';
-    }
+    // const additional = this.options.additional;
+    // if (additional && (additional.timestamps !== false) && (this.isTimestampField(field) || this.isParanoidField(field))) {
+    //   return '';
+    // }
 
     if (this.isIgnoredField(field)) {
       return '';
