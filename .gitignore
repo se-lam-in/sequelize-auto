@@ -1,4 +1,3 @@
-types
 test/models/*.js
 sample/models/*
 sample/northwind.sqlite
